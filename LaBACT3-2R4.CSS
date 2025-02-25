@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.text-white {
+    color: white;
+}
+
+body {
+    background-color: #ccc0c2;
+}
+.navbar {
+    background-color: #4a626f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-icons li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-icons i {
+    cursor: pointer;
+}
+
+/* Notification Badge */
+.notification {
+    position: relative;
+}
