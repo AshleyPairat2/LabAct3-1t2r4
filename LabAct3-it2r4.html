@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBPAGE</title>
+    <title>NavBar</title>
     <link rel="stylesheet" href="LaBACT3-2R4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head> 
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <a href="#" class="logo">Logo</a>
-            </div>
-            <div class="nav-right">
-                <ul class="nav-icons">
-                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <div class="logo">
+                    <a href="#"><i class="fas fa-home"></i> Logo</a>
+                </div>
+                <ul class="nav-menu">
                     <li><a href="#"><i class="fas fa-globe"></i></a></li>
                     <li><a href="#"><i class="fas fa-user"></i></a></li>
                     <li><a href="#"><i class="fas fa-envelope"></i></a></li>
                     <li class="notification">
-                        <a href="#"><i class="fas fa-bell"></i></a>
-                        <span class="badge">3</span>
-                    </li>
-                    <li class="profile">
-                        <img src="profile.png" alt="Profile">
+                        <a href="#"><i class="fas fa-bell"></i>
+                            <span class="notification-badge">3</span>
+                        </a>
+                        <ul class="dropdown">
+                            <li>One new friend request</li>
+                            <li>John Doe posted on your wall</li>
+                            <li>Jane likes your post</li>
+                        </ul>
                     </li>
                 </ul>
             </div>
+
+            <!-- Right side: User Profile -->
+            <div class="nav-right">
+                <a href="#"><img src="pew.jpg" alt="User Profile" class="profile-pic"></a>
+            </div>
         </nav>
     </header>
+
 </body>
 </html>
-
-    
