@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="LaBACT3-2R4.css">
     <link rel="stylesheet" href="Main content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-</head> 
+</head>
 <body>
     <header>
         <nav class="navbar">
@@ -32,12 +31,86 @@
                     </li>
                 </ul>
             </div>
-             <!-- Right side: User Profile -->
-             <div class="nav-right">
+            <div class="nav-right">
                 <a href="#"><img src="pew.jpg" alt="User Profile" class="profile-pic"></a>
             </div>
         </nav>
     </header>
 
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar-left">
+            <div class="profile-info">
+                <img src="pew.jpg" alt="Profile Picture" class="profile-pic-large">
+                <h3>John Doe</h3>
+                <p>Web Developer</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-user"></i> Friends</a></li>
+                <li><a href="#"><i class="fas fa-images"></i> Photos</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Videos</a></li>
+                <li><a href="#"><i class="fas fa-calendar"></i> Events</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Post Box Section -->
+            <div class="post-container">
+                <div class="post-box">
+                    <textarea placeholder="What's on your mind?"></textarea>
+                    <button class="post-button">Post</button>
+                </div>
+            </div>
+
+            <!-- Feed Section -->
+            <div class="feed-container">
+                <div class="feed">
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="pew.jpg" alt="User" class="post-profile-pic">
+                            <div class="post-info">
+                                <h4>John Doe</h4>
+                                <p>2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>This is a sample post. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="fas fa-thumbs-up"></i> Like</button>
+                            <button><i class="fas fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                    <!-- Add more posts here if needed -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar-right">
+            <!-- Upcoming Events Container -->
+            <div class="events-container">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li>Event 1</li>
+                    <li>Event 2</li>
+                    <li>Event 3</li>
+                </ul>
+            </div>
+
+            <!-- Friends List Container -->
+            <div class="friends-container">
+                <h3>Friends</h3>
+                <ul>
+                    <li><img src="pew.jpg" alt="Friend"> Jane Doe</li>
+                    <li><img src="pew.jpg" alt="Friend"> John Smith</li>
+                    <li><img src="pew.jpg" alt="Friend"> Alice Johnson</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>
