@@ -143,18 +143,24 @@ body {
 
 /* Sidebar Left */
 .sidebar-left {
-    width: 200px;
     background-color: white;
+    align-self: auto;
+    width: 250px; /* Adjusted width */
+    height: 330px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-info {
     text-align: center;
+    margin-bottom: 20px; /* Adjust spacing */
 }
 
 .profile-pic-large {
-    width: 80px;
+    width: 80px; /* Adjusted size */
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
@@ -163,11 +169,13 @@ body {
 
 .sidebar-menu {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust spacing */
+    padding: 0;
+    text-align: center;
 }
 
 .sidebar-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Adjust spacing */
 }
 
 .sidebar-menu a {
@@ -175,11 +183,28 @@ body {
     color: #333;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; /* Adjust spacing */
+    font-size: 16px; /* Adjusted font size */
 }
 
 .sidebar-menu a:hover {
     color: #4CAF50;
+}
+
+/* Additional Container */
+.additional-container {
+    width: 120%; /* Full width of the sidebar */
+    background-color: white;
+    align-self: auto;
+    padding: 20px;
+    margin-top: 20px; /* Space between profile and this container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additional-container h3 {
+    font-size: 18px; /* Larger font size for headings */
+    margin-bottom: 15px; /* Spacing below headings */
+    color: #333;
 }
 
 /* Main Content */
@@ -187,6 +212,8 @@ body {
     flex: 1;
     max-width: 600px;
     background-color: white;
+    align-self: auto;
+    margin-top: 20px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -293,11 +320,9 @@ body {
 
 /* Right Sidebar */
 .sidebar-right {
-    width: 200px;
-    background-color: white;
+    width: 250px; /* Adjusted width */
+    margin-top: 20px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 20px; /* Adds space between the containers */
@@ -305,9 +330,8 @@ body {
 
 /* Events Container */
 .events-container {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 15px;
-    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -329,9 +353,8 @@ body {
 
 /* Friends Container */
 .friends-container {
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 15px;
-    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -359,4 +382,11 @@ body {
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.post {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Space between posts */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
