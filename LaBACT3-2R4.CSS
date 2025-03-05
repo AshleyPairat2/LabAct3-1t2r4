@@ -34,7 +34,6 @@ body {
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
-    
 }
 
 .logo a:hover {
@@ -145,9 +144,8 @@ body {
 /* Sidebar Left */
 .sidebar-left {
     background-color: white;
-    align-self: auto;
-    width: 250px; /* Adjusted width */
-    height: 330px;
+    width: 250px;
+    height: 300px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -157,11 +155,11 @@ body {
 
 .profile-info {
     text-align: center;
-    margin-bottom: 20px; /* Adjust spacing */
+    margin-bottom: 20px;
 }
 
 .profile-pic-large {
-    width: 80px; /* Adjusted size */
+    width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
@@ -170,13 +168,13 @@ body {
 
 .sidebar-menu {
     list-style: none;
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 20px;
     padding: 0;
     text-align: center;
 }
 
 .sidebar-menu li {
-    margin-bottom: 15px; /* Adjust spacing */
+    margin-bottom: 15px;
 }
 
 .sidebar-menu a {
@@ -184,8 +182,8 @@ body {
     color: #333;
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust spacing */
-    font-size: 16px; /* Adjusted font size */
+    gap: 10px;
+    font-size: 16px;
 }
 
 .sidebar-menu a:hover {
@@ -194,18 +192,98 @@ body {
 
 /* Additional Container */
 .additional-container {
-    width: 120%; /* Full width of the sidebar */
+    width: 250px;
     background-color: white;
-    align-self: auto;
     padding: 20px;
-    margin-top: 20px; /* Space between profile and this container */
+    margin-top: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.additional-container h3 {
-    font-size: 18px; /* Larger font size for headings */
-    margin-bottom: 15px; /* Spacing below headings */
+.sidebar-link {
+    font-size: 18px;
     color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the icon and the text */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #6f8f97; /* Change to your preferred hover color */
+    color: white;
+}
+
+.sidebar-link i {
+    font-size: 20px; /* Adjust the icon size if needed */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar-link {
+        font-size: 16px; /* Smaller font size for smaller screens */
+        padding: 8px;
+    }
+
+    .sidebar-link i {
+        font-size: 18px; /* Smaller icon size for smaller screens */
+    }
+}
+
+/* Interests Container */
+.interests-container {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.interests-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interests-container h3 i {
+    font-size: 20px;
+}
+
+.interests-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.interests-links a {
+    text-decoration: none;
+    color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.interests-links a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interests-container h3 {
+        font-size: 16px;
+    }
+
+    .interests-links a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
 }
 
 /* Main Content */
@@ -213,8 +291,6 @@ body {
     flex: 1;
     max-width: 600px;
     background-color: white;
-    align-self: auto;
-    margin-top: 20px;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -240,7 +316,7 @@ body {
 }
 
 .post-button {
-    background-color: #4CAF50;
+    background-color: #6f8f97;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -307,7 +383,7 @@ body {
 }
 
 .post-actions button {
-    background-color: #4CAF50;
+    background-color: #6f8f97;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -321,12 +397,11 @@ body {
 
 /* Right Sidebar */
 .sidebar-right {
-    width: 250px; /* Adjusted width */
-    margin-top: 20px;
+    width: 250px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adds space between the containers */
+    gap: 20px;
 }
 
 /* Events Container */
@@ -388,8 +463,8 @@ body {
 .post {
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px; /* Space between posts */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Base styles for the social media post container */
