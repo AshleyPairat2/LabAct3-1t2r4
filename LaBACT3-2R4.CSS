@@ -30,13 +30,15 @@ body {
 .logo a {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s, transform 0.3s;
+    
 }
 
 .logo a:hover {
-    color: #4caf50;
+    color: #7b7c7b;
     transform: scale(1.1);
 }
 
@@ -68,7 +70,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: #4CAF50;
+    color: #737a73;
 }
 
 .notification {
@@ -92,9 +94,8 @@ body {
     top: 100%;
     left: 0;
     background: white;
-    width: 200px;
+    width: 280px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
     padding: 10px;
     list-style: none;
 }
@@ -389,4 +390,45 @@ body {
     border-radius: 10px;
     margin-bottom: 20px; /* Space between posts */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+/* Base styles for the social media post container */
+.social-post {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.social-post:hover {
+    background-color: #e0e0e0;
+}
+
+/* Square background hover effect */
+.social-post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.social-post:hover::before {
+    opacity: 1;
+}
+
+/* Content styling */
+.social-post .content {
+    position: relative;
+    z-index: 2;
 }
