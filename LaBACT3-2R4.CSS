@@ -297,7 +297,8 @@ body {
 /* Post Container */
 .post-container {
     margin-bottom: 20px;
-    border-radius: 0;
+    border-radius: 0 !important; /* Force the style to apply */
+
 }
 
 .post-box {
@@ -314,7 +315,7 @@ body {
 }
 
 .post-button {
-    background-color: #6f8f97;
+    background-color: #77969e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -331,18 +332,19 @@ body {
 .feed-container {
     background-color: transparent;
     margin-top: 10px;
-    border-radius: 0;
+    border-radius: 0 !important; 
     padding: 20px;
     height: 250px;
 }
 
 .feed {
     margin-top: 20px;
+    border-radius: 0;
 }
 
 .post {
     background-color: white;
-    border-radius: 0;
+    border-radius: 0 !important; 
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -383,7 +385,7 @@ body {
 }
 
 .post-actions button {
-    background-color: #6f8f97;
+    background-color: #77969e;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -398,7 +400,7 @@ body {
 /* Post Container */
 .post {
     background-color: white;
-    border-radius: 0;
+    border-radius: 0 !important; 
     height: 250px;
     padding: 20px;
     margin-bottom: 20px;
@@ -439,7 +441,7 @@ body {
 }
 
 .post-actions button {
-    background-color: #4CAF50;
+    background-color: #77969e;
     color: white;
     border: none;
     padding: 5px 10px;
